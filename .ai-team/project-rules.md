@@ -1,7 +1,7 @@
 # Global Project Laws (The Constitution)
 
 ## 1. Communication & Language
-- **ALL documentation, code comments, and commit messages MUST be in English.**
+- **ALL code comments, and commit messages MUST be in English.**
 - All internal discussions and handovers must be documented in `docs/`.
 
 ## 2. Technical Standards
