@@ -1,0 +1,45 @@
+{
+  "name": "family-finance-app-tests",
+  "version": "1.0.0",
+  "description": "测试套件",
+  "main": "index.js",
+  "scripts": {
+    "test:frontend": "jest frontend",
+    "test:backend": "jest backend",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "./setupTests.js"
+    ],
+    "forceExit": true,
+    "detectOpenHandles": false,
+    "moduleNameMapper": {
+      "^react$": "<rootDir>/../src/frontend/node_modules/react",
+      "^react-dom$": "<rootDir>/../src/frontend/node_modules/react-dom",
+      "^react-dom/client$": "<rootDir>/../src/frontend/node_modules/react-dom/client"
+    }
+  },
+  "dependencies": {
+    "jest": "^29.6.1",
+    "jest-environment-jsdom": "^29.6.1",
+    "supertest": "^6.3.3",
+    "typescript": "^5.1.6",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^15.0.7",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.2.14",
+    "chart.js": "^4.5.1",
+    "react": "^19.2.4",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1",
+    "ts-jest": "^29.1.1"
+  }
+}
